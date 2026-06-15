@@ -1,0 +1,10 @@
+{
+  "name": "S Class Command Center",
+  "short_name": "S Class",
+  "start_url": "/sclass-briefing/",
+  "display": "standalone",
+  "background_color": "#0b0c0e",
+  "theme_color": "#0b0c0e",
+  "description": "Daily command center for S Class Auto Aesthetics",
+  "icons": []
+}

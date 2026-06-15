@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0b0c0e">
+<title>S Class Command Center</title>
+<link rel="manifest" href="manifest.json">
+<style>
+  :root{
+    --bg:#0b0c0e; --panel:#141619; --panel2:#1b1e22; --line:#2a2e34;
+    --ink:#eceef1; --mute:#7e858f; --gold:#f0a830; --gold-dim:#7a5616;
+    --green:#4cc38a; --red:#e5564c; --blue:#5b8def; --purple:#b388ff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+  body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased;overscroll-behavior:none}
+  .mono{font-family:ui-monospace,Menlo,Consolas,monospace}
+  .wrap{max-width:720px;margin:0 auto;padding:env(safe-area-inset-top,12px) 14px 100px}
+  button{font-family:inherit;cursor:pointer}
+  input,select,textarea{font-family:inherit;font-size:16px}
+
+  /* Header */
+  .hd{display:flex;align-items:center;justify-content:space-between;gap:10px;border-bottom:1px solid var(--line);padding:12px 0 12px}
+  .id{display:flex;align-items:center;gap:10px}
+  .mono-badge{width:40px;height:40px;border:1.5px solid var(--gold);border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;color:var(--gold);flex:none}
+  .id .name{font-size:18px;font-weight:800;letter-spacing:-.02em;line-height:1}
+  .id .sub{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-top:3px}
+  .clock{text-align:right;flex:1;min-width:100px}.clock .d{font-size:12px}.clock .t{font-size:10px;color:var(--mute)}
+
+  /* Vitals */
+  .vitals{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:12px}
+  .v{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:9px 8px;text-align:center}
+  .v .lab{font-size:8px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .v .num{font-size:18px;font-weight:800;margin-top:2px}
+  .v .num.pos{color:var(--green)}.v .num.neg{color:var(--red)}.v .num.warn{color:var(--gold)}
+
+  /* Tabs */
+  .tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin:12px 0;position:sticky;top:0;z-index:5;background:var(--bg);padding:4px 0}
+  .tabs button{background:var(--panel);border:1px solid var(--line);color:var(--mute);font-size:13px;font-weight:600;padding:12px 4px;border-radius:10px}
+  .tabs button.on{background:var(--gold);color:#1a1206;border-color:var(--gold)}
+
+  /* Task cards */
+  .task{display:flex;align-items:center;gap:11px;background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:13px;margin-bottom:7px}
+  .task.done{opacity:.4}.task.done .tx{text-decoration:line-through}
+  .check{width:26px;height:26px;border:1.5px solid var(--mute);border-radius:7px;flex:none;display:flex;align-items:center;justify-content:center}
+  .check.on{background:var(--gold);border-color:var(--gold)}.check.on::after{content:"\2713";color:#1a1206;font-size:15px;font-weight:800}
+  .tx{flex:1;font-size:14px;line-height:1.3}.star{color:var(--gold);flex:none;font-size:14px}
+  .del{background:none;border:none;color:var(--mute);font-size:20px;flex:none;line-height:1;padding:4px 6px}
+  .task-meta{font-size:11px;color:var(--mute);margin-top:2px}
+  .tag{font-size:10px;padding:2px 6px;border-radius:4px;font-weight:600;margin-right:4px}
+  .tag.call{background:#1a2a1a;color:var(--green);border:1px solid #2a4a2a}
+  .tag.job{background:#1a1a2a;color:var(--blue);border:1px solid #2a2a5a}
+  .tag.follow{background:#2a1a0a;color:var(--gold);border:1px solid #4a3a1a}
+  .tag.admin{background:#1a1a1a;color:var(--mute);border:1px solid var(--line)}
+
+  /* Add task */
+  .addrow{display:flex;gap:6px;margin-bottom:10px}
+  .addrow input[type=text]{flex:1;min-width:0;background:var(--panel);border:1px solid var(--line);color:var(--ink);border-radius:10px;padding:12px}
+  .addrow input:focus{outline:none;border-color:var(--gold-dim)}
+  .add-btn{background:var(--gold);color:#1a1206;border:none;border-radius:10px;padding:0 16px;font-weight:700;font-size:14px;flex:none}
+  .tag-row{display:flex;gap:5px;margin-bottom:10px;flex-wrap:wrap}
+  .tag-btn{background:var(--panel);border:1px solid var(--line);color:var(--mute);font-size:11px;padding:7px 10px;border-radius:8px;font-weight:600}
+  .tag-btn.on{border-color:var(--gold-dim);color:var(--gold)}
+
+  /* Date strip */
+  .datestrip{display:flex;align-items:center;justify-content:space-between;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:5px 6px;margin-bottom:10px}
+  .datestrip .arrow{background:none;border:none;color:var(--mute);font-size:22px;padding:6px 12px;line-height:1}
+  .datestrip .lab{font-size:13px;font-weight:600;text-align:center}
+  .datestrip .today-link{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold-dim);border-radius:6px;padding:5px 8px}
+
+  /* Carry forward */
+  .carry{font-size:13px;color:var(--gold);background:#1c1407;border:1px solid var(--gold-dim);border-radius:9px;padding:11px;margin-bottom:10px}
+
+  /* Pulse */
+  .pulse-head{font-size:11px;color:var(--mute);margin-bottom:12px;display:flex;justify-content:space-between;align-items:center}
+  .pulse-sect{margin-bottom:16px}
+  .pulse-label{font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:7px}
+  .pulse-label .cnt{background:var(--panel2);border:1px solid var(--line);border-radius:5px;padding:2px 6px;font-size:11px;font-weight:800}
+  .pulse-label.green{color:var(--green)}.pulse-label.red{color:var(--red)}.pulse-label.blue{color:var(--blue)}.pulse-label.orange{color:var(--gold)}.pulse-label.purple{color:var(--purple)}
+  .pulse-card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin-bottom:5px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .pulse-card .pc-name{font-size:13px;font-weight:600;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .pulse-card .pc-phone{font-size:11px;color:var(--mute);font-family:ui-monospace,monospace;flex:none}
+  .pulse-card .pc-meta{font-size:10px;color:var(--mute);flex:none}
+  .pulse-card .pc-stage{font-size:10px;color:var(--blue);background:#111d33;border:1px solid #1e3a5f;border-radius:5px;padding:2px 6px;flex:none}
+  .pulse-card .pc-value{font-size:12px;font-weight:700;color:var(--green);flex:none}
+  .pulse-card .pc-stale{font-size:10px;color:var(--red);flex:none}
+  .pulse-card .pc-msg{font-size:11px;color:var(--mute);flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .pulse-card .pc-time{font-size:12px;font-weight:600;color:var(--gold);flex:none;font-family:ui-monospace,monospace}
+  .pulse-empty{font-size:13px;color:var(--mute);font-style:italic;padding:10px 4px}
+  .pulse-vitals{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-bottom:14px}
+  @media(max-width:420px){.pulse-vitals{grid-template-columns:repeat(3,1fr)}}
+  .pv{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:9px 6px;text-align:center}
+  .pv .pv-num{font-size:20px;font-weight:800}.pv .pv-lab{font-size:8px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);margin-top:2px}
+  .pv .pv-num.red{color:var(--red)}.pv .pv-num.green{color:var(--green)}.pv .pv-num.blue{color:var(--blue)}.pv .pv-num.orange{color:var(--gold)}.pv .pv-num.purple{color:var(--purple)}
+
+  /* Call-to-action on pulse cards */
+  .pulse-card .cta{font-size:11px;color:var(--gold);text-decoration:none;flex:none}
+
+  /* Money */
+  .mgrid{display:grid;grid-template-columns:auto 1fr;gap:7px;margin-bottom:12px}
+  .io-tog{display:flex;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  .io-tog button{background:var(--panel);border:none;color:var(--mute);font-size:13px;font-weight:700;padding:0 14px}
+  .io-tog button.in.on{background:var(--green);color:#06140d}.io-tog button.out.on{background:var(--red);color:#1a0907}
+  .mgrid input[type=number],.mgrid input[type=text]{background:var(--panel);border:1px solid var(--line);color:var(--ink);border-radius:10px;padding:12px;width:100%}
+  .mgrid input[type=text]{grid-column:1/-1}
+  .mgrid select,.mgrid input[type=date]{background:var(--panel);border:1px solid var(--line);color:var(--ink);border-radius:10px;padding:11px;width:100%}
+  .mgrid .log{grid-column:1/-1;background:var(--gold);color:#1a1206;border:none;border-radius:10px;padding:13px;font-weight:700;font-size:14px}
+  .mgrid input:focus,.mgrid select:focus{outline:none;border-color:var(--gold-dim)}
+  .txn{display:flex;align-items:center;gap:9px;background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:11px;margin-bottom:6px}
+  .txn .dt{font-size:10px;color:var(--mute);flex:none;width:36px}.txn .lb{flex:1;font-size:13px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .txn .amt{font-weight:700;font-size:14px;flex:none}.txn .amt.pos{color:var(--green)}.txn .amt.neg{color:var(--red)}
+
+  /* Scale */
+  .phase{margin:18px 0 8px;display:flex;align-items:center;gap:8px}
+  .phase .pn{font-family:ui-monospace,monospace;font-size:11px;color:#1a1206;background:var(--gold);border-radius:6px;width:22px;height:22px;display:flex;align-items:center;justify-content:center;font-weight:700;flex:none}
+  .phase .pt{font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700}
+  .move{background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:12px;margin-bottom:8px}
+  .move.done{opacity:.5}
+  .move-top{display:flex;align-items:flex-start;gap:10px}
+  .mstat{flex:none;margin-top:1px;width:22px;height:22px;border-radius:6px;border:1.5px solid;font-size:12px;display:flex;align-items:center;justify-content:center;font-family:ui-monospace,monospace}
+  .mstat.open{border-color:var(--mute);color:transparent}
+  .mstat.moving{border-color:var(--blue);color:var(--blue)}.mstat.moving::after{content:"\203A"}
+  .mstat.done{border-color:var(--green);background:var(--green);color:#06140d}.mstat.done::after{content:"\2713"}
+  .move-body{flex:1;min-width:0}
+  .move-title{font-size:14px;font-weight:650}.move.done .move-title{text-decoration:line-through}
+  .move-why{font-size:12px;color:var(--mute);margin-top:4px;line-height:1.4}
+  .move-act{font-size:12px;color:#fff;margin-top:6px;line-height:1.4;border-left:2px solid var(--gold-dim);padding-left:9px}
+  .move-act b{color:var(--gold);font-weight:600;text-transform:uppercase;font-size:8px;letter-spacing:.12em;display:block;margin-bottom:2px}
+
+  .empty{font-size:13px;color:var(--mute);font-style:italic;padding:16px 4px;text-align:center}
+  .foot{margin-top:22px;padding-top:12px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+  .foot .s{font-size:10px;color:var(--mute)}
+  .ghost{background:none;border:1px solid var(--line);color:var(--mute);font-size:11px;padding:7px 10px;border-radius:8px}
+
+  @media(min-width:560px){.mgrid{grid-template-columns:auto 130px 1fr 1fr auto}.mgrid input[type=text]{grid-column:auto}.mgrid .log{grid-column:auto}}
+</style>
+</head>
+<body>
+<script src="pulse_data.js"></script>
+<div class="wrap"><div id="root">Loading...</div></div>
+<script>
+(function(){
+  var KEY='bt:command:v2';
+  function $(s){return document.querySelector(s);}
+  function uid(){return Math.random().toString(36).slice(2,9);}
+  function iso(d){return d.toISOString().slice(0,10);}
+  function todayISO(){return iso(new Date());}
+  var tab='pulse', sel=todayISO(), io='out', addTag='', hasStorage=false;
+
+  var TAGS=['call','job','follow','admin'];
+  var TAG_LABELS={call:'Call',job:'Job',follow:'Follow up',admin:'Admin'};
+
+  var PHASES=['Ship now — already built','Prove ceramic demand','Recurring & warm channels','Break the ceiling'];
+  function scaleSeed(){return [
+    {id:uid(),ph:0,status:'open',title:'Flip the no-show deposit live',why:'Built and sitting off. Protects high-ticket slots.',act:'Turn the deposit step on in the booking flow today.'},
+    {id:uid(),ph:0,status:'open',title:'Turn on phone follow-up for coating leads',why:'Nobody closes a $1k coating over AI text. A call is the fix.',act:'Activate the follow-up workflow; call every coating lead within the hour.'},
+    {id:uid(),ph:0,status:'open',title:'Sub-5-minute first response on cold leads',why:'Speed-to-lead is the single biggest cold-close lever.',act:'Set the AI agent to fire the first touch instantly.'},
+    {id:uid(),ph:0,status:'open',title:'3-touch SMS reactivation to ~1,500 cold leads',why:'Free pipeline you already own.',act:'Schedule a 3-message reactivation sequence in GHL this week.'},
+    {id:uid(),ph:1,status:'open',title:'Build the dedicated ceramic funnel',why:'Separate landing page + outcome creative: hydrophobic demo, warranty, Miami sun/salt.',act:'Separate LP from detail funnel. Different audience, different creative.'},
+    {id:uid(),ph:1,status:'open',title:'Run the mobile coating demand test',why:'Answers the warehouse question before you sign fixed rent.',act:'Set a booking threshold. Run it. Get a real number.'},
+    {id:uid(),ph:2,status:'open',title:'Activate Sunny Isles B2B channel',why:'Warm, high-intent, high-AOV, barely used.',act:'Get 5-6 recurring residents via Ame, reprice to $110-120/visit.'},
+    {id:uid(),ph:2,status:'open',title:'Launch $120/mo maintenance plan',why:'Recurring revenue smooths the income roller-coaster.',act:'Offer it to your top past clients first.'},
+    {id:uid(),ph:3,status:'open',title:'Bring William on as paid sub',why:'Breaks the solo-labor ceiling.',act:'Pay per job on low-margin details after demand is proven.'},
+    {id:uid(),ph:3,status:'open',title:'Warehouse gate — sign only when both are true',why:'Do not bolt a monthly clock onto an unbuilt funnel.',act:'(1) Mobile coating demand proven. (2) Written co-tenancy split signed.'}
+  ];}
+  function freshState(){return{tasks:[
+    {id:uid(),text:'Flip the no-show deposit live',date:todayISO(),done:false,star:true,tag:'admin'},
+    {id:uid(),text:'Call one coating lead off the list',date:todayISO(),done:false,star:true,tag:'call'}
+  ],money:[],moves:scaleSeed(),ts:Date.now()};}
+  var state=freshState();
+
+  // localStorage persistence
+  function load(){
+    try{var s=localStorage.getItem(KEY);if(s){state=JSON.parse(s);if(!state.moves||!state.moves.length)state.moves=scaleSeed();hasStorage=true;}else{save();}}catch(e){save();}
+  }
+  function save(){state.ts=Date.now();try{localStorage.setItem(KEY,JSON.stringify(state));hasStorage=true;}catch(e){}draw();}
+
+  function esc(s){return(s||'').replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function money(n){return(n<0?'-':'+')+'$'+Math.abs(n).toLocaleString('en-US',{minimumFractionDigits:0,maximumFractionDigits:2});}
+  function longDate(s){var p=s.split('-');return new Date(p[0],p[1]-1,p[2]).toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'});}
+  function shortDate(s){var p=s.split('-');return p[1]+'/'+p[2];}
+  function monthTotals(){var ym=todayISO().slice(0,7);var inc=0,exp=0;state.money.forEach(function(t){if(t.date.slice(0,7)===ym){if(t.amount>=0)inc+=t.amount;else exp+=t.amount;}});return{inc:inc,exp:exp,net:inc+exp};}
+
+  function draw(){
+    try{render();}catch(e){$('#root').innerHTML='<div style="padding:20px;color:var(--ink)">Error: <b style="color:var(--gold)">'+(e&&e.message?esc(e.message):'unknown')+'</b></div>';}
+  }
+
+  function render(){
+    var now=Date.now();
+    var todayLeft=state.tasks.filter(function(t){return t.date===todayISO()&&!t.done;}).length;
+    var mt=monthTotals();
+    var shipped=state.moves.filter(function(m){return m.status==='done';}).length;
+    var p=window.PULSE_DATA;
+    var unreads=p?p.counts.unreads:0;
+
+    $('#root').innerHTML=
+     '<div class="hd"><div class="id"><div class="mono-badge">BT</div>'+
+       '<div><div class="name">S Class</div><div class="sub">Command Center</div></div></div>'+
+       '<div class="clock"><div class="d">'+longDate(todayISO())+'</div>'+
+       '<div class="t mono">'+new Date(now).toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'})+' · Miami</div></div></div>'+
+     '<div class="vitals">'+
+       '<div class="v"><div class="lab">Tasks</div><div class="num '+(todayLeft?'warn':'pos')+'">'+todayLeft+'</div></div>'+
+       '<div class="v"><div class="lab">Net mo</div><div class="num '+(mt.net>=0?'pos':'neg')+'">'+money(mt.net)+'</div></div>'+
+       '<div class="v"><div class="lab">Unreads</div><div class="num '+(unreads>5?'warn':'pos')+'">'+unreads+'</div></div>'+
+       '<div class="v"><div class="lab">Shipped</div><div class="num">'+shipped+'<span style="font-size:12px;color:var(--mute)">/'+state.moves.length+'</span></div></div></div>'+
+     '<div class="tabs">'+
+       '<button class="'+(tab==='pulse'?'on':'')+'" onclick="WR.setTab(\'pulse\')">Pulse</button>'+
+       '<button class="'+(tab==='today'?'on':'')+'" onclick="WR.setTab(\'today\')">Tasks</button>'+
+       '<button class="'+(tab==='money'?'on':'')+'" onclick="WR.setTab(\'money\')">Money</button>'+
+       '<button class="'+(tab==='scale'?'on':'')+'" onclick="WR.setTab(\'scale\')">Scale</button></div>'+
+     '<div id="body">'+(tab==='pulse'?pulseView():tab==='today'?todayView():tab==='money'?moneyView():scaleView())+'</div>'+
+     '<div class="foot"><span class="s">'+(hasStorage?'Auto-saved':'No storage')+' · '+new Date(state.ts).toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'})+'</span>'+
+       '<button class="ghost" onclick="WR.reset()">Reset</button></div>';
+  }
+
+  // ── Pulse ──
+  function pulseView(){
+    var p=window.PULSE_DATA;
+    if(!p)return '<div class="empty">No pulse data yet.<br><span style="font-size:12px;color:var(--mute);margin-top:6px;display:block">Data loads automatically after the first GitHub Actions run.</span></div>';
+    var c=p.counts||{};
+    var html='<div class="pulse-head"><span>Updated: '+esc(p.updatedDisplay||'unknown')+'</span></div>';
+    html+='<div class="pulse-vitals">'+
+      '<div class="pv"><div class="pv-num green">'+(c.newLeads||0)+'</div><div class="pv-lab">New</div></div>'+
+      '<div class="pv"><div class="pv-num '+(c.staleLeads?'red':'green')+'">'+(c.staleLeads||0)+'</div><div class="pv-lab">Need call</div></div>'+
+      '<div class="pv"><div class="pv-num '+(c.unreads>5?'orange':'blue')+'">'+(c.unreads||0)+'</div><div class="pv-lab">Unreads</div></div>'+
+      '<div class="pv"><div class="pv-num orange">'+(c.pipeline||0)+'</div><div class="pv-lab">Pipeline</div></div>'+
+      '<div class="pv"><div class="pv-num purple">'+(c.appointments||0)+'</div><div class="pv-lab">Appts</div></div></div>';
+
+    if(p.staleLeads&&p.staleLeads.length){
+      html+='<div class="pulse-sect"><div class="pulse-label red">Call now — no response <span class="cnt">'+p.staleLeads.length+'</span></div>';
+      p.staleLeads.forEach(function(l){html+='<div class="pulse-card"><span class="pc-name">'+esc(l.name)+'</span><span class="pc-phone">'+esc(l.phone)+'</span><span class="pc-meta">'+l.hoursAgo+'h ago</span></div>';});
+      html+='</div>';
+    }
+    if(p.newLeads&&p.newLeads.length){
+      html+='<div class="pulse-sect"><div class="pulse-label green">New leads (24h) <span class="cnt">'+p.newLeads.length+'</span></div>';
+      p.newLeads.forEach(function(l){html+='<div class="pulse-card"><span class="pc-name">'+esc(l.name)+'</span><span class="pc-phone">'+esc(l.phone)+'</span><span class="pc-meta">via '+esc(l.source)+'</span></div>';});
+      html+='</div>';
+    }
+    if(p.unreads&&p.unreads.length){
+      html+='<div class="pulse-sect"><div class="pulse-label blue">Unread conversations <span class="cnt">'+p.unreads.length+'</span></div>';
+      p.unreads.forEach(function(u){html+='<div class="pulse-card"><span class="pc-name">'+esc(u.name)+'</span><span class="pc-msg">“'+esc(u.lastMsg)+'”</span></div>';});
+      html+='</div>';
+    }
+    if(p.pipeline&&p.pipeline.length){
+      html+='<div class="pulse-sect"><div class="pulse-label orange">Pipeline <span class="cnt">'+p.pipeline.length+'</span></div>';
+      p.pipeline.forEach(function(o){
+        var staleHtml=o.daysStale>=2?'<span class="pc-stale">'+o.daysStale+'d stale</span>':'';
+        html+='<div class="pulse-card"><span class="pc-name">'+esc(o.name)+'</span><span class="pc-stage">'+esc(o.stage)+'</span><span class="pc-value">$'+o.value.toLocaleString()+'</span>'+staleHtml+'</div>';
+      });
+      html+='</div>';
+    }
+    html+='<div class="pulse-sect"><div class="pulse-label purple">Today\'s appointments <span class="cnt">'+(p.appointments?p.appointments.length:0)+'</span></div>';
+    if(p.appointments&&p.appointments.length){
+      p.appointments.forEach(function(a){html+='<div class="pulse-card"><span class="pc-time">'+esc(a.time)+'</span><span class="pc-name">'+esc(a.title)+'</span><span class="pc-meta">'+esc(a.contact)+'</span></div>';});
+    } else {
+      html+='<div class="pulse-empty">Nothing booked today.</div>';
+    }
+    html+='</div>';
+    return html;
+  }
+
+  // ── Tasks ──
+  function todayView(){
+    var dayTasks=state.tasks.filter(function(t){return t.date===sel;}).sort(function(a,b){return(a.done-b.done)||(b.star-a.star);});
+    var overdue=state.tasks.filter(function(t){return!t.done&&t.date<todayISO();});
+    return '<div class="datestrip"><button class="arrow" onclick="WR.nav(-1)">‹</button>'+
+      '<span class="lab">'+longDate(sel)+(sel===todayISO()?' · Today':'')+'</span>'+
+      (sel===todayISO()?'':'<span class="today-link" onclick="WR.goToday()">Today</span>')+
+      '<button class="arrow" onclick="WR.nav(1)">›</button></div>'+
+      (overdue.length&&sel===todayISO()?'<div class="carry" onclick="WR.pullOverdue()">↪ '+overdue.length+' unfinished from earlier — tap to move here</div>':'')+
+      '<div class="addrow"><input type="text" id="ti" placeholder="Add task..." onkeydown="if(event.key===\'Enter\')WR.addTask()">'+
+      '<button class="add-btn" onclick="WR.addTask()">+</button></div>'+
+      '<div class="tag-row">'+TAGS.map(function(t){return '<button class="tag-btn '+(addTag===t?'on':'')+'" onclick="WR.setTag(\''+t+'\')">'+TAG_LABELS[t]+'</button>';}).join('')+
+      '<button class="tag-btn '+(addTag===''?'':'on')+'" onclick="WR.setTag(\'\')"★</button></div>'+
+      (dayTasks.length?dayTasks.map(taskRow).join(''):'<div class="empty">No tasks for this day.</div>');
+  }
+  function taskRow(t){
+    var tagHtml=t.tag?'<span class="tag '+t.tag+'">'+TAG_LABELS[t.tag]+'</span>':'';
+    return '<div class="task '+(t.done?'done':'')+'"><div class="check '+(t.done?'on':'')+'" onclick="WR.toggle(\''+t.id+'\')"></div><div style="flex:1;min-width:0">'+(t.star?'<span class="star">★ </span>':'')+'<span class="tx">'+esc(t.text)+'</span>'+(tagHtml?'<div class="task-meta">'+tagHtml+'</div>':'')+'</div><button class="del" onclick="WR.delTask(\''+t.id+'\')">×</button></div>';
+  }
+
+  // ── Money ──
+  function moneyView(){
+    var mt=monthTotals();
+    var txns=state.money.slice().sort(function(a,b){return b.date.localeCompare(a.date);}).slice(0,40);
+    var cats=['Job income','Ad spend','Supplies','Vehicle / gas','Subscriptions','Other'];
+    return '<div class="vitals" style="margin-top:0;margin-bottom:12px">'+
+      '<div class="v"><div class="lab">In</div><div class="num pos">$'+mt.inc.toLocaleString('en-US',{maximumFractionDigits:0})+'</div></div>'+
+      '<div class="v"><div class="lab">Out</div><div class="num neg">$'+Math.abs(mt.exp).toLocaleString('en-US',{maximumFractionDigits:0})+'</div></div>'+
+      '<div class="v" style="grid-column:span 2"><div class="lab">Net</div><div class="num '+(mt.net>=0?'pos':'neg')+'">'+money(mt.net)+'</div></div></div>'+
+      '<div class="mgrid"><div class="io-tog"><button class="in '+(io==='in'?'on':'')+'" onclick="WR.setIO(\'in\')">In</button><button class="out '+(io==='out'?'on':'')+'" onclick="WR.setIO(\'out\')">Out</button></div>'+
+      '<input type="number" id="m-amt" placeholder="0" step="0.01" inputmode="decimal">'+
+      '<input type="text" id="m-lab" placeholder="What for?" onkeydown="if(event.key===\'Enter\')WR.addMoney()">'+
+      '<select id="m-cat">'+cats.map(function(c){return '<option>'+c+'</option>';}).join('')+'</select>'+
+      '<input type="date" id="m-date" value="'+todayISO()+'">'+
+      '<button class="log" onclick="WR.addMoney()">Log it</button></div>'+
+      (txns.length?txns.map(txnRow).join(''):'<div class="empty">No transactions logged yet.</div>');
+  }
+  function txnRow(t){var pos=t.amount>=0;return '<div class="txn"><span class="dt mono">'+shortDate(t.date)+'</span><span class="lb">'+esc(t.label)+'</span><span class="amt '+(pos?'pos':'neg')+'">'+money(t.amount)+'</span><button class="del" onclick="WR.delMoney(\''+t.id+'\')">×</button></div>';}
+
+  // ── Scale ──
+  function scaleView(){
+    var html='';
+    PHASES.forEach(function(p,i){var moves=state.moves.filter(function(m){return m.ph===i;});if(!moves.length)return;html+='<div class="phase"><span class="pn">'+(i+1)+'</span><span class="pt">'+esc(p)+'</span></div>'+moves.map(moveCard).join('');});
+    return html;
+  }
+  function moveCard(m){return '<div class="move '+(m.status==='done'?'done':'')+'"><div class="move-top"><div class="mstat '+m.status+'" onclick="WR.cycleMove(\''+m.id+'\')"></div><div class="move-body"><div class="move-title">'+esc(m.title)+'</div><div class="move-why">'+esc(m.why)+'</div><div class="move-act"><b>Next move</b>'+esc(m.act)+'</div></div></div></div>';}
+
+  // ── Handlers ──
+  window.WR={
+    setTab:function(t){tab=t;draw();},
+    nav:function(n){var d=new Date(sel);d.setDate(d.getDate()+n);sel=iso(d);draw();},
+    goToday:function(){sel=todayISO();draw();},
+    setTag:function(t){addTag=(addTag===t)?'':t;draw();},
+    addTask:function(){var i=$('#ti');if(!i||!i.value.trim())return;state.tasks.push({id:uid(),text:i.value.trim(),date:sel,done:false,star:addTag==='',tag:addTag||''});addTag='';save();},
+    toggle:function(id){var t=state.tasks.filter(function(x){return x.id===id;})[0];if(t){t.done=!t.done;save();}},
+    delTask:function(id){state.tasks=state.tasks.filter(function(x){return x.id!==id;});save();},
+    pullOverdue:function(){state.tasks.forEach(function(t){if(!t.done&&t.date<todayISO())t.date=todayISO();});save();},
+    setIO:function(v){io=v;draw();},
+    addMoney:function(){var a=$('#m-amt');var amt=parseFloat(a&&a.value);if(!amt||amt<=0)return;var signed=io==='in'?Math.abs(amt):-Math.abs(amt);state.money.push({id:uid(),date:$('#m-date').value||todayISO(),label:($('#m-lab').value||'').trim()||'(no label)',cat:$('#m-cat').value,amount:signed});save();},
+    delMoney:function(id){state.money=state.money.filter(function(x){return x.id!==id;});save();},
+    cycleMove:function(id){var m=state.moves.filter(function(x){return x.id===id;})[0];var o=['open','moving','done'];m.status=o[(o.indexOf(m.status)+1)%3];save();},
+    reset:function(){if(confirm('Wipe all tasks, money, and reset the roadmap?')){state=freshState();save();}}
+  };
+
+  load();
+  draw();
+})();
+</script>
+</body>
+</html>
