@@ -1,6 +1,6 @@
 window.PULSE_DATA = {
-  "updatedDisplay": "Jun 15, 12:07 AM ET",
-  "updatedISO": "2026-06-15T04:07:29.921663+00:00",
+  "updatedDisplay": "Jun 15, 01:13 PM ET",
+  "updatedISO": "2026-06-15T17:13:21.341009+00:00",
   "counts": {
     "newLeads": 0,
     "staleLeads": 1,
@@ -13,10 +13,22 @@ window.PULSE_DATA = {
     {
       "name": "+19543045511",
       "phone": "+19543045511",
-      "hoursAgo": 26.9
+      "hoursAgo": 40.0
     }
   ],
   "unreads": [
+    {
+      "name": "Noel",
+      "lastMsg": "You're booked! \u2705\n\n\ud83d\udcc5 Thursday, June 18 at 9:00 AM\n\ud83d\udccd 9621 Fontainebleau Blvd Miami"
+    },
+    {
+      "name": "Mary",
+      "lastMsg": "Hey Mary, gonna close out your quote on my end since I haven't heard back. If an"
+    },
+    {
+      "name": "Melissa",
+      "lastMsg": "Hey Melissa, gonna close out your quote on my end since I haven't heard back. If"
+    },
     {
       "name": "Daniela",
       "lastMsg": "Hey Daniela, gonna close out your quote on my end since I haven't heard back. If"
@@ -44,18 +56,6 @@ window.PULSE_DATA = {
     {
       "name": "Am\u00e9",
       "lastMsg": "Want us to update your package to Full Detail, or would you rather go Interior O"
-    },
-    {
-      "name": "Ver",
-      "lastMsg": "Liked \u201cI dont necessarily have a flyer, but if anything you can send them over t"
-    },
-    {
-      "name": "Kevin",
-      "lastMsg": "You're booked! \u2705\n\n\ud83d\udcc5 Wednesday, June 24 at 1:00 PM\n\ud83d\udccd 8003 South West 157th Place\n"
-    },
-    {
-      "name": "Brando",
-      "lastMsg": "You're booked! \u2705\n\n\ud83d\udcc5 Tuesday, June 16 at 9:00 AM\n\ud83d\udccd 10619 sw 113th pl\n\ud83d\ude97 Full Detai"
     }
   ],
   "pipeline": [
@@ -99,7 +99,7 @@ window.PULSE_DATA = {
       "name": "Maylen",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 17
+      "daysStale": 18
     },
     {
       "name": "Erik",
