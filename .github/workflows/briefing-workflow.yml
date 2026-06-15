@@ -2,13 +2,14 @@ name: Daily Briefing
 
 on:
   schedule:
-    # 8:00 AM Eastern (12:00 UTC during EDT / 13:00 UTC during EST)
     - cron: '0 12 * * *'
-  workflow_dispatch:  # allows manual trigger from GitHub UI
+  workflow_dispatch:
 
 jobs:
   send-briefing:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
@@ -19,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Run briefing
+      - name: Send email briefing
         env:
           GHL_API_KEY: ${{ secrets.GHL_API_KEY }}
           GHL_LOCATION_ID: ${{ secrets.GHL_LOCATION_ID }}
@@ -27,3 +28,61 @@ jobs:
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
         run: python cloud_briefing.py
+
+      - name: Generate pulse data for dashboard
+        env:
+          GHL_API_KEY: ${{ secrets.GHL_API_KEY }}
+          GHL_LOCATION_ID: ${{ secrets.GHL_LOCATION_ID }}
+        run: python generate_pulse.py
+
+      - name: Commit and push pulse_data.js
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add pulse_data.js
+          git diff --cached --quiet || git commit -m "Update pulse data"
+          git pushname: Daily Briefing
+
+on:
+  schedule:
+    # 8:00 AM Eastern (12:00 UTC during EDT / 13:00 UTC during EST)
+    - cron: '0 12 * * *'
+  workflow_dispatch:  # allows manual trigger from GitHub UI
+
+jobs:
+  send-briefing:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Send email briefing
+        env:
+          GHL_API_KEY: ${{ secrets.GHL_API_KEY }}
+          GHL_LOCATION_ID: ${{ secrets.GHL_LOCATION_ID }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: python cloud_briefing.py
+
+      - name: Generate pulse data for dashboard
+        env:
+          GHL_API_KEY: ${{ secrets.GHL_API_KEY }}
+          GHL_LOCATION_ID: ${{ secrets.GHL_LOCATION_ID }}
+        run: python generate_pulse.py
+
+      - name: Commit and push pulse_data.js
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add pulse_data.js
+          git diff --cached --quiet || git commit -m "Update pulse data $(date -u +%Y-%m-%d)"
+          git push
