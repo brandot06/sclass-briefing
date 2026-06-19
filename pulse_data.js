@@ -1,201 +1,181 @@
 window.PULSE_DATA = {
-  "updatedDisplay": "Jun 18, 11:21 AM ET",
-  "updatedISO": "2026-06-18T15:21:13.165656+00:00",
+  "updatedDisplay": "Jun 19, 11:16 AM ET",
+  "updatedISO": "2026-06-19T15:16:34.679790+00:00",
   "counts": {
-    "newLeads": 9,
-    "staleLeads": 22,
+    "newLeads": 5,
+    "staleLeads": 18,
     "unreads": 20,
     "pipeline": 20,
     "appointments": 1
   },
   "newLeads": [
     {
-      "name": "jennifer",
-      "phone": "+17863651521",
+      "name": "vincent crawford",
+      "phone": "+19546558578",
       "source": "Unknown"
     },
     {
-      "name": "vanessa",
-      "phone": "+13059227766",
+      "name": "felton",
+      "phone": "+17866961126",
       "source": "Unknown"
     },
     {
-      "name": "priscilla",
-      "phone": "+17865031555",
+      "name": "terri",
+      "phone": "+17866237793",
       "source": "Unknown"
     },
     {
-      "name": "maxwell from williams group test",
-      "phone": "+19177831038",
+      "name": "stephen",
+      "phone": "+13053952345",
       "source": "Unknown"
     },
     {
-      "name": "david",
-      "phone": "+17863681468",
-      "source": "Unknown"
-    },
-    {
-      "name": "lu",
-      "phone": "+13052354361",
-      "source": "Unknown"
-    },
-    {
-      "name": "faith",
-      "phone": "+13052819057",
-      "source": "Unknown"
-    },
-    {
-      "name": "benjamin",
-      "phone": "+17859340675",
-      "source": "Unknown"
-    },
-    {
-      "name": "richard",
-      "phone": "+13052835730",
+      "name": "patrice",
+      "phone": "+13059422080",
       "source": "Unknown"
     }
   ],
   "staleLeads": [
     {
+      "name": "felton",
+      "phone": "+17866961126",
+      "hoursAgo": 11.1
+    },
+    {
+      "name": "terri",
+      "phone": "+17866237793",
+      "hoursAgo": 13.8
+    },
+    {
+      "name": "stephen",
+      "phone": "+13053952345",
+      "hoursAgo": 16.6
+    },
+    {
+      "name": "patrice",
+      "phone": "+13059422080",
+      "hoursAgo": 17.0
+    },
+    {
       "name": "jennifer",
       "phone": "+17863651521",
-      "hoursAgo": 5.0
+      "hoursAgo": 28.9
     },
     {
       "name": "vanessa",
       "phone": "+13059227766",
-      "hoursAgo": 10.7
+      "hoursAgo": 34.6
     },
     {
       "name": "priscilla",
       "phone": "+17865031555",
-      "hoursAgo": 11.8
+      "hoursAgo": 35.7
     },
     {
       "name": "maxwell from williams group test",
       "phone": "+19177831038",
-      "hoursAgo": 11.8
-    },
-    {
-      "name": "david",
-      "phone": "+17863681468",
-      "hoursAgo": 12.2
-    },
-    {
-      "name": "lu",
-      "phone": "+13052354361",
-      "hoursAgo": 14.6
-    },
-    {
-      "name": "faith",
-      "phone": "+13052819057",
-      "hoursAgo": 15.2
-    },
-    {
-      "name": "benjamin",
-      "phone": "+17859340675",
-      "hoursAgo": 16.7
+      "hoursAgo": 35.7
     }
   ],
   "unreads": [
     {
-      "name": "Noel",
-      "lastMsg": "Cool heading down now"
-    },
-    {
-      "name": "Jennifer",
-      "lastMsg": "Hey Jennifer! Brando here from S Class Auto Aesthetics.\n\nGot your Full Detail (I"
-    },
-    {
-      "name": "Vanessa",
-      "lastMsg": "Hey Vanessa! Brando here from S Class Auto Aesthetics.\n\nGot your Interior Detail"
-    },
-    {
-      "name": "Maxwell from williams group test",
-      "lastMsg": "Do yk if there's a way to do it without high level and only Claude?"
-    },
-    {
-      "name": "Priscilla",
-      "lastMsg": "Hey Priscilla! Brando here from S Class Auto Aesthetics.\n\nGot your Full Detail ("
-    },
-    {
-      "name": "David",
-      "lastMsg": "Hey David! Brando here from S Class Auto Aesthetics.\n\nGot your Full Detail (Inte"
-    },
-    {
       "name": "Benjamin",
-      "lastMsg": "Hey Benjamin, quick nudge. Could you send a few sunlit paint close-ups plus a fu"
+      "lastMsg": "Yes Miami-Dade works for me"
     },
     {
-      "name": "Lu",
-      "lastMsg": "Hey Lu! Brando here from S Class Auto Aesthetics.\n\nGot your Interior Detail requ"
+      "name": "Vincent Crawford",
+      "lastMsg": "You're booked! \u2705\n\n\ud83d\udcc5 Saturday, July 4 at 1:00 PM\n\ud83d\udccd 11362sw160 miami 33196\n\ud83d\ude97 Full "
     },
     {
-      "name": "faith",
-      "lastMsg": "Hey faith! Brando here from S Class Auto Aesthetics.\n\nGot your Interior Detail r"
+      "name": "FELTON",
+      "lastMsg": "Hey FELTON! Brando here from S Class Auto Aesthetics.\n\nGot your Full Detail (Int"
     },
     {
-      "name": "Nicole",
-      "lastMsg": "Stop"
+      "name": "Erik",
+      "lastMsg": "Hey Erik , gonna close out your quote on my end since I haven't heard back. If a"
+    },
+    {
+      "name": "Cynthia",
+      "lastMsg": "Hey Cynthia, gonna close out your quote on my end since I haven't heard back. If"
+    },
+    {
+      "name": "Terri",
+      "lastMsg": "Hey Terri! Brando here from S Class Auto Aesthetics.\n\nGot your Full Detail (Inte"
+    },
+    {
+      "name": "Lourdes",
+      "lastMsg": "Hey Lourdes, gonna close out your quote on my end since I haven't heard back. If"
+    },
+    {
+      "name": "Stephen",
+      "lastMsg": "You're booked! \u2705\n\n\ud83d\udcc5 Saturday, June 20 at 9:00 AM\n\ud83d\udccd 6731 SW 155th Ave\n\ud83d\ude97 Auto Deta"
+    },
+    {
+      "name": "Patrice",
+      "lastMsg": "Hey Patrice! Brando here from S Class Auto Aesthetics.\n\nGot your Interior Detail"
+    },
+    {
+      "name": "Noel",
+      "lastMsg": "Cool heading down right now"
     }
   ],
   "pipeline": [
     {
+      "name": "Vincent Crawford",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
+      "name": "FELTON",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
+      "name": "Terri",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
+      "name": "Stephen",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
+      "name": "Patrice",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
       "name": "Jennifer",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 0
-    },
-    {
-      "name": "Vanessa",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 0
-    },
-    {
-      "name": "Priscilla",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 0
-    },
-    {
-      "name": "Maxwell from williams group test",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 0
-    },
-    {
-      "name": "David",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 0
-    },
-    {
-      "name": "Lu",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 0
-    },
-    {
-      "name": "faith",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 0
-    },
-    {
-      "name": "RICHARD",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 0
-    },
-    {
-      "name": "JD Henao",
       "stage": "New detailing lead",
       "value": 160.0,
       "daysStale": 1
     },
     {
-      "name": "Rossi",
+      "name": "Vanessa",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 1
+    },
+    {
+      "name": "Priscilla",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 1
+    },
+    {
+      "name": "Maxwell from williams group test",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 1
+    },
+    {
+      "name": "David",
       "stage": "New detailing lead",
       "value": 160.0,
       "daysStale": 1
