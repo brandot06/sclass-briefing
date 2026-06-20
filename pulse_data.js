@@ -1,191 +1,205 @@
 window.PULSE_DATA = {
-  "updatedDisplay": "Jun 19, 11:16 AM ET",
-  "updatedISO": "2026-06-19T15:16:34.679790+00:00",
+  "updatedDisplay": "Jun 20, 10:00 AM ET",
+  "updatedISO": "2026-06-20T14:00:29.286826+00:00",
   "counts": {
-    "newLeads": 5,
-    "staleLeads": 18,
+    "newLeads": 9,
+    "staleLeads": 21,
     "unreads": 20,
     "pipeline": 20,
-    "appointments": 1
+    "appointments": 0
   },
   "newLeads": [
     {
-      "name": "vincent crawford",
-      "phone": "+19546558578",
+      "name": "anais",
+      "phone": "+17862290120",
       "source": "Unknown"
     },
     {
-      "name": "felton",
-      "phone": "+17866961126",
+      "name": "charles",
+      "phone": "+13055107243",
       "source": "Unknown"
     },
     {
-      "name": "terri",
-      "phone": "+17866237793",
+      "name": "tajh",
+      "phone": "+13057726941",
       "source": "Unknown"
     },
     {
-      "name": "stephen",
-      "phone": "+13053952345",
+      "name": "julia",
+      "phone": "+17864502918",
       "source": "Unknown"
     },
     {
-      "name": "patrice",
-      "phone": "+13059422080",
+      "name": "+17866200266",
+      "phone": "+17866200266",
+      "source": "Unknown"
+    },
+    {
+      "name": "ligia",
+      "phone": "+17869420013",
+      "source": "Unknown"
+    },
+    {
+      "name": "missy",
+      "phone": "+17864517360",
+      "source": "Unknown"
+    },
+    {
+      "name": "adriana",
+      "phone": "+13054507875",
+      "source": "Unknown"
+    },
+    {
+      "name": "jose",
+      "phone": "+17862012998",
       "source": "Unknown"
     }
   ],
   "staleLeads": [
     {
-      "name": "felton",
-      "phone": "+17866961126",
-      "hoursAgo": 11.1
+      "name": "tajh",
+      "phone": "+13057726941",
+      "hoursAgo": 9.9
     },
     {
-      "name": "terri",
-      "phone": "+17866237793",
-      "hoursAgo": 13.8
+      "name": "julia",
+      "phone": "+17864502918",
+      "hoursAgo": 11.6
     },
     {
-      "name": "stephen",
-      "phone": "+13053952345",
-      "hoursAgo": 16.6
+      "name": "+17866200266",
+      "phone": "+17866200266",
+      "hoursAgo": 11.6
     },
     {
-      "name": "patrice",
-      "phone": "+13059422080",
-      "hoursAgo": 17.0
+      "name": "ligia",
+      "phone": "+17869420013",
+      "hoursAgo": 11.7
     },
     {
-      "name": "jennifer",
-      "phone": "+17863651521",
-      "hoursAgo": 28.9
+      "name": "missy",
+      "phone": "+17864517360",
+      "hoursAgo": 12.2
     },
     {
-      "name": "vanessa",
-      "phone": "+13059227766",
-      "hoursAgo": 34.6
+      "name": "adriana",
+      "phone": "+13054507875",
+      "hoursAgo": 12.9
     },
     {
-      "name": "priscilla",
-      "phone": "+17865031555",
-      "hoursAgo": 35.7
+      "name": "jose",
+      "phone": "+17862012998",
+      "hoursAgo": 18.5
     },
     {
-      "name": "maxwell from williams group test",
-      "phone": "+19177831038",
-      "hoursAgo": 35.7
+      "name": "vincent crawford",
+      "phone": "+19546558578",
+      "hoursAgo": 25.5
     }
   ],
   "unreads": [
     {
-      "name": "Benjamin",
-      "lastMsg": "Yes Miami-Dade works for me"
+      "name": "Anais",
+      "lastMsg": "Hey Anais! Brando here from S Class Auto Aesthetics.\n\nGot your Interior Detail r"
     },
     {
-      "name": "Vincent Crawford",
-      "lastMsg": "You're booked! \u2705\n\n\ud83d\udcc5 Saturday, July 4 at 1:00 PM\n\ud83d\udccd 11362sw160 miami 33196\n\ud83d\ude97 Full "
+      "name": "charles",
+      "lastMsg": "Hey charles! Brando here from S Class Auto Aesthetics.\n\nGot your Full Detail (In"
     },
     {
-      "name": "FELTON",
-      "lastMsg": "Hey FELTON! Brando here from S Class Auto Aesthetics.\n\nGot your Full Detail (Int"
+      "name": "Tajh",
+      "lastMsg": "Hey Tajh! Brando here from S Class Auto Aesthetics.\n\nGot your Full Detail (Inter"
     },
     {
-      "name": "Erik",
-      "lastMsg": "Hey Erik , gonna close out your quote on my end since I haven't heard back. If a"
+      "name": "JULIA",
+      "lastMsg": "Hey JULIA! Brando here from S Class Auto Aesthetics.\n\nGot your Full Detail (Inte"
     },
     {
-      "name": "Cynthia",
-      "lastMsg": "Hey Cynthia, gonna close out your quote on my end since I haven't heard back. If"
+      "name": "(786) 620-0266",
+      "lastMsg": "Hi this is S Class Auto Aesthetics, I saw that we just missed your call how can "
     },
     {
-      "name": "Terri",
-      "lastMsg": "Hey Terri! Brando here from S Class Auto Aesthetics.\n\nGot your Full Detail (Inte"
+      "name": "Ligia",
+      "lastMsg": "Hey Ligia! Brando here from S Class Auto Aesthetics.\n\nGot your Full Detail (Inte"
     },
     {
-      "name": "Lourdes",
-      "lastMsg": "Hey Lourdes, gonna close out your quote on my end since I haven't heard back. If"
+      "name": "Missy",
+      "lastMsg": "Hey Missy! Brando here from S Class Auto Aesthetics.\n\nGot your Full Detail (Inte"
     },
     {
-      "name": "Stephen",
-      "lastMsg": "You're booked! \u2705\n\n\ud83d\udcc5 Saturday, June 20 at 9:00 AM\n\ud83d\udccd 6731 SW 155th Ave\n\ud83d\ude97 Auto Deta"
+      "name": "Adriana",
+      "lastMsg": "Hey Adriana! Brando here from S Class Auto Aesthetics.\n\nGot your Full Detail (In"
     },
     {
-      "name": "Patrice",
-      "lastMsg": "Hey Patrice! Brando here from S Class Auto Aesthetics.\n\nGot your Interior Detail"
+      "name": "Catherine Lanuez",
+      "lastMsg": "Hey Catherine, thanks for your inquiry!\n\nA member of S Class Auto Aesthetics wil"
     },
     {
-      "name": "Noel",
-      "lastMsg": "Cool heading down right now"
+      "name": "Jose",
+      "lastMsg": "Hey Jose! Brando here from S Class Auto Aesthetics.\n\nGot your Full Detail (Inter"
     }
   ],
   "pipeline": [
     {
-      "name": "Vincent Crawford",
+      "name": "Anais",
       "stage": "New detailing lead",
       "value": 160.0,
       "daysStale": 0
+    },
+    {
+      "name": "charles",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
+      "name": "Tajh",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
+      "name": "JULIA",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
+      "name": "Ligia",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
+      "name": "Missy",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
+      "name": "Adriana",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
+      "name": "Jose",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
+      "name": "Vincent Crawford",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 1
     },
     {
       "name": "FELTON",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 0
-    },
-    {
-      "name": "Terri",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 0
-    },
-    {
-      "name": "Stephen",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 0
-    },
-    {
-      "name": "Patrice",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 0
-    },
-    {
-      "name": "Jennifer",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 1
-    },
-    {
-      "name": "Vanessa",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 1
-    },
-    {
-      "name": "Priscilla",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 1
-    },
-    {
-      "name": "Maxwell from williams group test",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 1
-    },
-    {
-      "name": "David",
-      "stage": "New detailing lead",
-      "value": 160.0,
       "daysStale": 1
     }
   ],
-  "appointments": [
-    {
-      "title": "Noel \u2014 PRISTINE \u2014 $200 \u2014 Sedan / Coupe",
-      "time": "05:00 AM",
-      "contact": ""
-    }
-  ]
+  "appointments": []
 };
