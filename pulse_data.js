@@ -1,6 +1,6 @@
 window.PULSE_DATA = {
-  "updatedDisplay": "Jun 20, 10:00 AM ET",
-  "updatedISO": "2026-06-20T14:00:29.286826+00:00",
+  "updatedDisplay": "Jun 21, 10:08 AM ET",
+  "updatedISO": "2026-06-21T14:08:32.287163+00:00",
   "counts": {
     "newLeads": 9,
     "staleLeads": 21,
@@ -10,192 +10,192 @@ window.PULSE_DATA = {
   },
   "newLeads": [
     {
-      "name": "anais",
-      "phone": "+17862290120",
+      "name": "simeon",
+      "phone": "+17862784684",
       "source": "Unknown"
     },
     {
-      "name": "charles",
-      "phone": "+13055107243",
+      "name": "gaston",
+      "phone": "+13053425880",
       "source": "Unknown"
     },
     {
-      "name": "tajh",
-      "phone": "+13057726941",
+      "name": "mitch",
+      "phone": "+13054769095",
       "source": "Unknown"
     },
     {
-      "name": "julia",
-      "phone": "+17864502918",
+      "name": "emely",
+      "phone": "+17866639227",
       "source": "Unknown"
     },
     {
-      "name": "+17866200266",
-      "phone": "+17866200266",
+      "name": "sabina",
+      "phone": "+12012339271",
       "source": "Unknown"
     },
     {
-      "name": "ligia",
-      "phone": "+17869420013",
+      "name": "crystal",
+      "phone": "+17864248528",
       "source": "Unknown"
     },
     {
-      "name": "missy",
-      "phone": "+17864517360",
+      "name": "ariel",
+      "phone": "+17865157785",
       "source": "Unknown"
     },
     {
-      "name": "adriana",
-      "phone": "+13054507875",
+      "name": "enid",
+      "phone": "+14077315020",
       "source": "Unknown"
     },
     {
-      "name": "jose",
-      "phone": "+17862012998",
+      "name": "lyanis",
+      "phone": "+17863676648",
       "source": "Unknown"
     }
   ],
   "staleLeads": [
     {
-      "name": "tajh",
-      "phone": "+13057726941",
-      "hoursAgo": 9.9
+      "name": "mitch",
+      "phone": "+13054769095",
+      "hoursAgo": 12.4
     },
     {
-      "name": "julia",
-      "phone": "+17864502918",
-      "hoursAgo": 11.6
+      "name": "emely",
+      "phone": "+17866639227",
+      "hoursAgo": 17.5
     },
     {
-      "name": "+17866200266",
-      "phone": "+17866200266",
-      "hoursAgo": 11.6
+      "name": "sabina",
+      "phone": "+12012339271",
+      "hoursAgo": 17.5
     },
     {
-      "name": "ligia",
-      "phone": "+17869420013",
-      "hoursAgo": 11.7
+      "name": "crystal",
+      "phone": "+17864248528",
+      "hoursAgo": 18.1
     },
     {
-      "name": "missy",
-      "phone": "+17864517360",
-      "hoursAgo": 12.2
+      "name": "ariel",
+      "phone": "+17865157785",
+      "hoursAgo": 22.4
     },
     {
-      "name": "adriana",
-      "phone": "+13054507875",
-      "hoursAgo": 12.9
+      "name": "enid",
+      "phone": "+14077315020",
+      "hoursAgo": 22.4
     },
     {
-      "name": "jose",
-      "phone": "+17862012998",
-      "hoursAgo": 18.5
+      "name": "lyanis",
+      "phone": "+17863676648",
+      "hoursAgo": 23.1
     },
     {
-      "name": "vincent crawford",
-      "phone": "+19546558578",
-      "hoursAgo": 25.5
+      "name": "anais",
+      "phone": "+17862290120",
+      "hoursAgo": 26.8
     }
   ],
   "unreads": [
     {
-      "name": "Anais",
-      "lastMsg": "Hey Anais! Brando here from S Class Auto Aesthetics.\n\nGot your Interior Detail r"
+      "name": "Marilyn Vasquez",
+      "lastMsg": "Hey Marilyn! Brando here from S Class Auto Aesthetics.\n\nGot your Interior Detail"
     },
     {
-      "name": "charles",
-      "lastMsg": "Hey charles! Brando here from S Class Auto Aesthetics.\n\nGot your Full Detail (In"
+      "name": "Simeon",
+      "lastMsg": "Hey Simeon! Brando here from S Class Auto Aesthetics.\n\nGot your Full Detail (Int"
     },
     {
-      "name": "Tajh",
-      "lastMsg": "Hey Tajh! Brando here from S Class Auto Aesthetics.\n\nGot your Full Detail (Inter"
+      "name": "Gaston",
+      "lastMsg": "Hey Gaston! Brando here from S Class Auto Aesthetics.\n\nGot your Full Detail (Int"
     },
     {
-      "name": "JULIA",
-      "lastMsg": "Hey JULIA! Brando here from S Class Auto Aesthetics.\n\nGot your Full Detail (Inte"
+      "name": "Mitch",
+      "lastMsg": "Hey Mitch! Brando here from S Class Auto Aesthetics.\n\nGot your Full Detail (Inte"
     },
     {
-      "name": "(786) 620-0266",
-      "lastMsg": "Hi this is S Class Auto Aesthetics, I saw that we just missed your call how can "
+      "name": "Emely",
+      "lastMsg": "You're booked! \u2705\n\n\ud83d\udcc5 Wednesday, June 24 at 12:00 PM\n\ud83d\udccd 907 Nw 104 St, Miami FL 331"
     },
     {
-      "name": "Ligia",
-      "lastMsg": "Hey Ligia! Brando here from S Class Auto Aesthetics.\n\nGot your Full Detail (Inte"
+      "name": "Sabina",
+      "lastMsg": "Hey Sabina! Brando here from S Class Auto Aesthetics.\n\nGot your Full Detail (Int"
     },
     {
-      "name": "Missy",
-      "lastMsg": "Hey Missy! Brando here from S Class Auto Aesthetics.\n\nGot your Full Detail (Inte"
+      "name": "Crystal",
+      "lastMsg": "You're booked! \u2705\n\n\ud83d\udcc5 Thursday, June 25 at 1:30 PM\n\ud83d\udccd 461 NW 57 CT\n\ud83d\ude97 Auto Detail \u2014 "
     },
     {
-      "name": "Adriana",
-      "lastMsg": "Hey Adriana! Brando here from S Class Auto Aesthetics.\n\nGot your Full Detail (In"
+      "name": "Martin Rivera",
+      "lastMsg": "For sedans the total for the basic package is $150 so for both cars the total wi"
     },
     {
-      "name": "Catherine Lanuez",
-      "lastMsg": "Hey Catherine, thanks for your inquiry!\n\nA member of S Class Auto Aesthetics wil"
+      "name": "Ariel",
+      "lastMsg": "You got it. We'll skip engine bay and ozone to preserve the factory scent. Noted"
     },
     {
-      "name": "Jose",
-      "lastMsg": "Hey Jose! Brando here from S Class Auto Aesthetics.\n\nGot your Full Detail (Inter"
+      "name": "Enid",
+      "lastMsg": "Hey Enid! Brando here from S Class Auto Aesthetics.\n\nGot your Full Detail (Inter"
     }
   ],
   "pipeline": [
     {
+      "name": "Mitch",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
+      "name": "Emely",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
+      "name": "Sabina",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
+      "name": "Crystal",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
+      "name": "Ariel",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
+      "name": "Enid",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
+      "name": "Lyanis",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
       "name": "Anais",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 0
-    },
-    {
-      "name": "charles",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 0
-    },
-    {
-      "name": "Tajh",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 0
-    },
-    {
-      "name": "JULIA",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 0
-    },
-    {
-      "name": "Ligia",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 0
-    },
-    {
-      "name": "Missy",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 0
-    },
-    {
-      "name": "Adriana",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 0
-    },
-    {
-      "name": "Jose",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 0
-    },
-    {
-      "name": "Vincent Crawford",
       "stage": "New detailing lead",
       "value": 160.0,
       "daysStale": 1
     },
     {
-      "name": "FELTON",
+      "name": "charles",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 1
+    },
+    {
+      "name": "Tajh",
       "stage": "New detailing lead",
       "value": 160.0,
       "daysStale": 1
