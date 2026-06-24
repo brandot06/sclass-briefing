@@ -1,185 +1,221 @@
 window.PULSE_DATA = {
-  "updatedDisplay": "Jun 23, 10:45 AM ET",
-  "updatedISO": "2026-06-23T14:45:43.556620+00:00",
+  "updatedDisplay": "Jun 24, 10:27 AM ET",
+  "updatedISO": "2026-06-24T14:27:09.813084+00:00",
   "counts": {
-    "newLeads": 5,
-    "staleLeads": 21,
+    "newLeads": 10,
+    "staleLeads": 22,
     "unreads": 20,
     "pipeline": 20,
-    "appointments": 0
+    "appointments": 2
   },
   "newLeads": [
     {
-      "name": "kadesha",
-      "phone": "+19547360253",
+      "name": "eduardo",
+      "phone": "+19542351171",
       "source": "Unknown"
     },
     {
-      "name": "lia",
-      "phone": "+17865729415",
+      "name": "robert",
+      "phone": "+13053801784",
       "source": "Unknown"
     },
     {
-      "name": "michelle",
-      "phone": "+17868979397",
+      "name": "elissa",
+      "phone": "+13053239042",
       "source": "Unknown"
     },
     {
-      "name": "dio",
-      "phone": "+17867190814",
+      "name": "doris",
+      "phone": "+13057247080",
       "source": "Unknown"
     },
     {
-      "name": "summer",
-      "phone": "+13059788260",
+      "name": "emilys",
+      "phone": "+17866563514",
+      "source": "Unknown"
+    },
+    {
+      "name": "cilla",
+      "phone": "+17328017828",
+      "source": "Unknown"
+    },
+    {
+      "name": "enrique",
+      "phone": "+13059921044",
+      "source": "Unknown"
+    },
+    {
+      "name": "nia",
+      "phone": "+18329974343",
+      "source": "Unknown"
+    },
+    {
+      "name": "danielle",
+      "phone": "+17863999211",
+      "source": "Unknown"
+    },
+    {
+      "name": "carlos",
+      "phone": "+17868725063",
       "source": "Unknown"
     }
   ],
   "staleLeads": [
     {
-      "name": "lia",
-      "phone": "+17865729415",
-      "hoursAgo": 10.6
+      "name": "robert",
+      "phone": "+13053801784",
+      "hoursAgo": 8.6
     },
     {
-      "name": "michelle",
-      "phone": "+17868979397",
-      "hoursAgo": 11.9
+      "name": "elissa",
+      "phone": "+13053239042",
+      "hoursAgo": 11.4
     },
     {
-      "name": "dio",
-      "phone": "+17867190814",
-      "hoursAgo": 12.1
+      "name": "doris",
+      "phone": "+13057247080",
+      "hoursAgo": 11.5
     },
     {
-      "name": "summer",
-      "phone": "+13059788260",
-      "hoursAgo": 17.7
+      "name": "emilys",
+      "phone": "+17866563514",
+      "hoursAgo": 12.8
     },
     {
-      "name": "sofia",
-      "phone": "+17863122833",
-      "hoursAgo": 24.9
+      "name": "cilla",
+      "phone": "+17328017828",
+      "hoursAgo": 12.9
     },
     {
-      "name": "kathy",
-      "phone": "+15615274726",
-      "hoursAgo": 29.7
+      "name": "enrique",
+      "phone": "+13059921044",
+      "hoursAgo": 17.9
     },
     {
-      "name": "jennifer",
-      "phone": "+13055837255",
-      "hoursAgo": 36.7
+      "name": "nia",
+      "phone": "+18329974343",
+      "hoursAgo": 18.6
     },
     {
-      "name": "luis gustavo",
-      "phone": "+13055659481",
-      "hoursAgo": 37.1
+      "name": "danielle",
+      "phone": "+17863999211",
+      "hoursAgo": 21.6
     }
   ],
   "unreads": [
     {
-      "name": "JULIA Hernandez",
-      "lastMsg": "Hey JULIA Hernandez, just making sure that quote for your [object Object] came t"
+      "name": "Emilys",
+      "lastMsg": "Also, the quote I got for myself last night I chose SUV, but my car is a minivan"
     },
     {
-      "name": "Brando",
-      "lastMsg": "Hey Brando, filling up my schedule this week, still want that [object Object] on"
+      "name": "Doris",
+      "lastMsg": "Hey Doris, just making sure that quote for your [object Object] came through oka"
     },
     {
-      "name": "W",
-      "lastMsg": "Hey W, just making sure that quote for your [object Object] came through okay? Y"
+      "name": "Eduardo",
+      "lastMsg": "Hey Eduardo, just making sure that quote for your [object Object] came through o"
     },
     {
-      "name": "Maria",
-      "lastMsg": "Hey Maria, just making sure that quote for your [object Object] came through oka"
+      "name": "Robert",
+      "lastMsg": "Hey Robert, just making sure that quote for your [object Object] came through ok"
     },
     {
-      "name": "Michelle",
-      "lastMsg": "Hey Michelle, just making sure that quote for your [object Object] came through "
+      "name": "Ibania Fernandez Fernandez",
+      "lastMsg": "Here's some recent work so you can see what you'd actually be getting: https://s"
     },
     {
-      "name": "Lia",
-      "lastMsg": "Hey Lia, just making sure that quote for your [object Object] came through okay?"
+      "name": "Elissa",
+      "lastMsg": "Hey Elissa, just making sure that quote for your [object Object] came through ok"
     },
     {
-      "name": "Kadesha",
-      "lastMsg": "Hey Kadesha, just making sure that quote for your [object Object] came through o"
+      "name": "Enrique",
+      "lastMsg": "Here's some recent work so you can see what you'd actually be getting: https://s"
     },
     {
-      "name": "Dio",
-      "lastMsg": "Hey Dio, just making sure that quote for your [object Object] came through okay?"
+      "name": "Cilla",
+      "lastMsg": "Hey Cilla, just making sure that quote for your [object Object] came through oka"
     },
     {
-      "name": "Brando Torres",
-      "lastMsg": "Hey Brando, thanks for your inquiry!\n\nA member of S Class Auto Aesthetics will c"
+      "name": "Emely",
+      "lastMsg": "Good morning Emely, I'll be headed your way soon and should reach exactly by 12:"
     },
     {
-      "name": "Kathy",
-      "lastMsg": "STOP"
+      "name": "Danielle",
+      "lastMsg": "Here's some recent work so you can see what you'd actually be getting: https://s"
     }
   ],
   "pipeline": [
     {
-      "name": "Kadesha",
+      "name": "Eduardo",
       "stage": "New detailing lead",
       "value": 160.0,
       "daysStale": 0
     },
     {
-      "name": "Lia",
+      "name": "Robert",
       "stage": "New detailing lead",
       "value": 160.0,
       "daysStale": 0
     },
     {
-      "name": "Michelle",
+      "name": "Elissa",
       "stage": "New detailing lead",
       "value": 160.0,
       "daysStale": 0
     },
     {
-      "name": "Dio",
+      "name": "Doris",
       "stage": "New detailing lead",
       "value": 160.0,
       "daysStale": 0
     },
     {
-      "name": "Summer",
+      "name": "Emilys",
       "stage": "New detailing lead",
       "value": 160.0,
       "daysStale": 0
     },
     {
-      "name": "sofia",
+      "name": "Cilla",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 1
+      "daysStale": 0
     },
     {
-      "name": "Kathy",
+      "name": "Enrique",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 1
+      "daysStale": 0
     },
     {
-      "name": "Jennifer",
+      "name": "Nia",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 1
+      "daysStale": 0
     },
     {
-      "name": "Luis Gustavo",
+      "name": "Danielle",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 1
+      "daysStale": 0
     },
     {
-      "name": "Olivia",
+      "name": "Carlos",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 1
+      "daysStale": 0
     }
   ],
-  "appointments": []
+  "appointments": [
+    {
+      "title": "Emely \u2014 PRISTINE \u2014 $230 \u2014 Sedan / Coupe",
+      "time": "08:00 AM",
+      "contact": ""
+    },
+    {
+      "title": "Olivia \u2014 Custom Quote \u2014 TBD \u2014 Sedan / Coupe",
+      "time": "11:30 AM",
+      "contact": ""
+    }
+  ]
 };
