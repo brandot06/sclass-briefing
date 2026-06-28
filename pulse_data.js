@@ -1,6 +1,6 @@
 window.PULSE_DATA = {
-  "updatedDisplay": "Jun 27, 09:39 AM ET",
-  "updatedISO": "2026-06-27T13:39:52.716386+00:00",
+  "updatedDisplay": "Jun 28, 09:43 AM ET",
+  "updatedISO": "2026-06-28T13:43:52.672487+00:00",
   "counts": {
     "newLeads": 0,
     "staleLeads": 0,
@@ -11,6 +11,30 @@ window.PULSE_DATA = {
   "newLeads": [],
   "staleLeads": [],
   "unreads": [
+    {
+      "name": "Brando",
+      "lastMsg": "Last one from me, Brando. Going to close out the quote on your [object Object] f"
+    },
+    {
+      "name": "Doris",
+      "lastMsg": "No rush at all, just don't want to leave you hanging. Is it the timing, the pric"
+    },
+    {
+      "name": "Robert",
+      "lastMsg": "No rush at all, just don't want to leave you hanging. Is it the timing, the pric"
+    },
+    {
+      "name": "Elissa",
+      "lastMsg": "No rush at all, just don't want to leave you hanging. Is it the timing, the pric"
+    },
+    {
+      "name": "Cilla",
+      "lastMsg": "No rush at all, just don't want to leave you hanging. Is it the timing, the pric"
+    },
+    {
+      "name": "Nia",
+      "lastMsg": "\u200b\u2764\ufe0f\u200b to \u201c\u200aGood morning Nia! Heading your way soon, should be there around Saturd"
+    },
     {
       "name": "Ibania Fernandez Fernandez",
       "lastMsg": "No rush at all, just don't want to leave you hanging. Is it the timing, the pric"
@@ -24,31 +48,7 @@ window.PULSE_DATA = {
       "lastMsg": "What do you have for Next week ?"
     },
     {
-      "name": "Nia",
-      "lastMsg": "\u200b\u2764\ufe0f\u200b to \u201c\u200aHey Nia, just a reminder, your detail is tomorrow at Saturday, June 27"
-    },
-    {
       "name": "Carlos",
-      "lastMsg": "No rush at all, just don't want to leave you hanging. Is it the timing, the pric"
-    },
-    {
-      "name": "JULIA Hernandez",
-      "lastMsg": "No rush at all, just don't want to leave you hanging. Is it the timing, the pric"
-    },
-    {
-      "name": "Michelle",
-      "lastMsg": "\ud83d\ude01"
-    },
-    {
-      "name": "W",
-      "lastMsg": "No rush at all, just don't want to leave you hanging. Is it the timing, the pric"
-    },
-    {
-      "name": "Maria",
-      "lastMsg": "No rush at all, just don't want to leave you hanging. Is it the timing, the pric"
-    },
-    {
-      "name": "Lia",
       "lastMsg": "No rush at all, just don't want to leave you hanging. Is it the timing, the pric"
     }
   ],
@@ -57,61 +57,61 @@ window.PULSE_DATA = {
       "name": "Eduardo",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 3
+      "daysStale": 4
     },
     {
       "name": "Robert",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 3
+      "daysStale": 4
     },
     {
       "name": "Elissa",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 3
+      "daysStale": 4
     },
     {
       "name": "Doris",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 3
+      "daysStale": 4
     },
     {
       "name": "Emilys",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 3
+      "daysStale": 4
     },
     {
       "name": "Cilla",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 3
+      "daysStale": 4
     },
     {
       "name": "Enrique",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 3
+      "daysStale": 4
     },
     {
       "name": "Nia",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 3
+      "daysStale": 4
     },
     {
       "name": "Danielle",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 3
+      "daysStale": 4
     },
     {
       "name": "Carlos",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 3
+      "daysStale": 4
     }
   ],
   "appointments": [
