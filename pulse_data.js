@@ -1,16 +1,28 @@
 window.PULSE_DATA = {
-  "updatedDisplay": "Jun 28, 09:43 AM ET",
-  "updatedISO": "2026-06-28T13:43:52.672487+00:00",
+  "updatedDisplay": "Jun 29, 11:43 AM ET",
+  "updatedISO": "2026-06-29T15:43:30.646151+00:00",
   "counts": {
     "newLeads": 0,
     "staleLeads": 0,
     "unreads": 20,
     "pipeline": 20,
-    "appointments": 1
+    "appointments": 0
   },
   "newLeads": [],
   "staleLeads": [],
   "unreads": [
+    {
+      "name": "Chris",
+      "lastMsg": "Hey Chris! Thanks for reaching back out. I'm out of town for the week and come b"
+    },
+    {
+      "name": "Luis Gustavo",
+      "lastMsg": "Last one from me, Luis Gustavo. Going to close out the quote on your [object Obj"
+    },
+    {
+      "name": "Jennifer",
+      "lastMsg": "Last one from me, Jennifer. Going to close out the quote on your [object Object]"
+    },
     {
       "name": "Brando",
       "lastMsg": "Last one from me, Brando. Going to close out the quote on your [object Object] f"
@@ -38,18 +50,6 @@ window.PULSE_DATA = {
     {
       "name": "Ibania Fernandez Fernandez",
       "lastMsg": "No rush at all, just don't want to leave you hanging. Is it the timing, the pric"
-    },
-    {
-      "name": "Enrique",
-      "lastMsg": "No rush at all, just don't want to leave you hanging. Is it the timing, the pric"
-    },
-    {
-      "name": "Danielle",
-      "lastMsg": "What do you have for Next week ?"
-    },
-    {
-      "name": "Carlos",
-      "lastMsg": "No rush at all, just don't want to leave you hanging. Is it the timing, the pric"
     }
   ],
   "pipeline": [
@@ -57,68 +57,62 @@ window.PULSE_DATA = {
       "name": "Eduardo",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 4
+      "daysStale": 5
     },
     {
       "name": "Robert",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 4
+      "daysStale": 5
     },
     {
       "name": "Elissa",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 4
+      "daysStale": 5
     },
     {
       "name": "Doris",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 4
+      "daysStale": 5
     },
     {
       "name": "Emilys",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 4
+      "daysStale": 5
     },
     {
       "name": "Cilla",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 4
+      "daysStale": 5
     },
     {
       "name": "Enrique",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 4
+      "daysStale": 5
     },
     {
       "name": "Nia",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 4
+      "daysStale": 5
     },
     {
       "name": "Danielle",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 4
+      "daysStale": 5
     },
     {
       "name": "Carlos",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 4
+      "daysStale": 6
     }
   ],
-  "appointments": [
-    {
-      "title": "Nia \u2014 FRESH \u2014 $240 \u2014 SUV / Crossover",
-      "time": "08:30 AM",
-      "contact": ""
-    }
-  ]
+  "appointments": []
 };
