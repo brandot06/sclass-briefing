@@ -1,6 +1,6 @@
 window.PULSE_DATA = {
-  "updatedDisplay": "Jul 01, 10:32 AM ET",
-  "updatedISO": "2026-07-01T14:32:12.905407+00:00",
+  "updatedDisplay": "Jul 02, 09:57 AM ET",
+  "updatedISO": "2026-07-02T13:57:12.094722+00:00",
   "counts": {
     "newLeads": 0,
     "staleLeads": 1,
@@ -13,7 +13,7 @@ window.PULSE_DATA = {
     {
       "name": "+16892414958",
       "phone": "+16892414958",
-      "hoursAgo": 24.4
+      "hoursAgo": 47.8
     }
   ],
   "unreads": [
@@ -63,61 +63,61 @@ window.PULSE_DATA = {
       "name": "Eduardo",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 7
+      "daysStale": 8
     },
     {
       "name": "Robert",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 7
+      "daysStale": 8
     },
     {
       "name": "Elissa",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 7
+      "daysStale": 8
     },
     {
       "name": "Doris",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 7
+      "daysStale": 8
     },
     {
       "name": "Emilys",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 7
+      "daysStale": 8
     },
     {
       "name": "Cilla",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 7
+      "daysStale": 8
     },
     {
       "name": "Enrique",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 7
+      "daysStale": 8
     },
     {
       "name": "Nia",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 7
+      "daysStale": 8
     },
     {
       "name": "Danielle",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 7
+      "daysStale": 8
     },
     {
       "name": "Carlos",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 7
+      "daysStale": 8
     }
   ],
   "appointments": []
