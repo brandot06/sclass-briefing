@@ -1,22 +1,37 @@
 window.PULSE_DATA = {
-  "updatedDisplay": "Jul 02, 09:57 AM ET",
-  "updatedISO": "2026-07-02T13:57:12.094722+00:00",
+  "updatedDisplay": "Jul 03, 10:00 AM ET",
+  "updatedISO": "2026-07-03T14:00:35.076036+00:00",
   "counts": {
-    "newLeads": 0,
-    "staleLeads": 1,
+    "newLeads": 1,
+    "staleLeads": 2,
     "unreads": 20,
     "pipeline": 20,
     "appointments": 0
   },
-  "newLeads": [],
+  "newLeads": [
+    {
+      "name": "+14072126300",
+      "phone": "+14072126300",
+      "source": "Unknown"
+    }
+  ],
   "staleLeads": [
+    {
+      "name": "+14072126300",
+      "phone": "+14072126300",
+      "hoursAgo": 18.9
+    },
     {
       "name": "+16892414958",
       "phone": "+16892414958",
-      "hoursAgo": 47.8
+      "hoursAgo": 71.9
     }
   ],
   "unreads": [
+    {
+      "name": "(407) 212-6300",
+      "lastMsg": "Hello, a friend of mine forwarded this number because I\u2019m interested in interior"
+    },
     {
       "name": "Doris",
       "lastMsg": "Last one from me, Doris. Going to close out the quote on your [object Object] fo"
@@ -52,10 +67,6 @@ window.PULSE_DATA = {
     {
       "name": "Enrique",
       "lastMsg": "Last one from me, Enrique. Going to close out the quote on your [object Object] "
-    },
-    {
-      "name": "Carlos",
-      "lastMsg": "Last one from me, Carlos. Going to close out the quote on your [object Object] f"
     }
   ],
   "pipeline": [
@@ -63,61 +74,61 @@ window.PULSE_DATA = {
       "name": "Eduardo",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 8
+      "daysStale": 9
     },
     {
       "name": "Robert",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 8
+      "daysStale": 9
     },
     {
       "name": "Elissa",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 8
+      "daysStale": 9
     },
     {
       "name": "Doris",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 8
+      "daysStale": 9
     },
     {
       "name": "Emilys",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 8
+      "daysStale": 9
     },
     {
       "name": "Cilla",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 8
+      "daysStale": 9
     },
     {
       "name": "Enrique",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 8
+      "daysStale": 9
     },
     {
       "name": "Nia",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 8
+      "daysStale": 9
     },
     {
       "name": "Danielle",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 8
+      "daysStale": 9
     },
     {
       "name": "Carlos",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 8
+      "daysStale": 9
     }
   ],
   "appointments": []
