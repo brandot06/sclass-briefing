@@ -1,33 +1,30 @@
 window.PULSE_DATA = {
-  "updatedDisplay": "Jul 03, 10:00 AM ET",
-  "updatedISO": "2026-07-03T14:00:35.076036+00:00",
+  "updatedDisplay": "Jul 04, 09:22 AM ET",
+  "updatedISO": "2026-07-04T13:22:02.886970+00:00",
   "counts": {
-    "newLeads": 1,
-    "staleLeads": 2,
+    "newLeads": 0,
+    "staleLeads": 1,
     "unreads": 20,
     "pipeline": 20,
-    "appointments": 0
+    "appointments": 1
   },
-  "newLeads": [
-    {
-      "name": "+14072126300",
-      "phone": "+14072126300",
-      "source": "Unknown"
-    }
-  ],
+  "newLeads": [],
   "staleLeads": [
     {
       "name": "+14072126300",
       "phone": "+14072126300",
-      "hoursAgo": 18.9
-    },
-    {
-      "name": "+16892414958",
-      "phone": "+16892414958",
-      "hoursAgo": 71.9
+      "hoursAgo": 42.2
     }
   ],
   "unreads": [
+    {
+      "name": "Vincent Crawford",
+      "lastMsg": "Good morning Vincent, Happy 4th of July! Just a reminder that your appointment i"
+    },
+    {
+      "name": "Am\u00e9",
+      "lastMsg": "Hey Am\u00e9, gonna close out your quote on my end since I haven't heard back. If any"
+    },
     {
       "name": "(407) 212-6300",
       "lastMsg": "Hello, a friend of mine forwarded this number because I\u2019m interested in interior"
@@ -59,14 +56,6 @@ window.PULSE_DATA = {
     {
       "name": "(689) 241-4958",
       "lastMsg": "Hi this is S Class Auto Aesthetics, I saw that we just missed your call how can "
-    },
-    {
-      "name": "Ibania Fernandez Fernandez",
-      "lastMsg": "Last one from me, Ibania Fernandez. Going to close out the quote on your [object"
-    },
-    {
-      "name": "Enrique",
-      "lastMsg": "Last one from me, Enrique. Going to close out the quote on your [object Object] "
     }
   ],
   "pipeline": [
@@ -74,62 +63,68 @@ window.PULSE_DATA = {
       "name": "Eduardo",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 9
+      "daysStale": 10
     },
     {
       "name": "Robert",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 9
+      "daysStale": 10
     },
     {
       "name": "Elissa",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 9
+      "daysStale": 10
     },
     {
       "name": "Doris",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 9
+      "daysStale": 10
     },
     {
       "name": "Emilys",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 9
+      "daysStale": 10
     },
     {
       "name": "Cilla",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 9
+      "daysStale": 10
     },
     {
       "name": "Enrique",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 9
+      "daysStale": 10
     },
     {
       "name": "Nia",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 9
+      "daysStale": 10
     },
     {
       "name": "Danielle",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 9
+      "daysStale": 10
     },
     {
       "name": "Carlos",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 9
+      "daysStale": 10
     }
   ],
-  "appointments": []
+  "appointments": [
+    {
+      "title": "Vincent Crawford \u2014 FRESH \u2014 $215 \u2014 Sedan / Coupe",
+      "time": "09:00 AM",
+      "contact": ""
+    }
+  ]
 };
