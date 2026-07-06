@@ -1,22 +1,62 @@
 window.PULSE_DATA = {
-  "updatedDisplay": "Jul 05, 09:28 AM ET",
-  "updatedISO": "2026-07-05T13:28:02.975618+00:00",
+  "updatedDisplay": "Jul 06, 11:29 AM ET",
+  "updatedISO": "2026-07-06T15:29:15.101858+00:00",
   "counts": {
-    "newLeads": 0,
+    "newLeads": 3,
     "staleLeads": 1,
     "unreads": 20,
     "pipeline": 20,
-    "appointments": 1
+    "appointments": 0
   },
-  "newLeads": [],
+  "newLeads": [
+    {
+      "name": "helen",
+      "phone": "+13053104924",
+      "source": "Unknown"
+    },
+    {
+      "name": "jorge",
+      "phone": "+17863743577",
+      "source": "Unknown"
+    },
+    {
+      "name": "astra",
+      "phone": "+13059843197",
+      "source": "Unknown"
+    }
+  ],
   "staleLeads": [
     {
-      "name": "+14072126300",
-      "phone": "+14072126300",
-      "hoursAgo": 66.3
+      "name": "astra",
+      "phone": "+13059843197",
+      "hoursAgo": 9.3
     }
   ],
   "unreads": [
+    {
+      "name": "Helen",
+      "lastMsg": "Hey Helen, just making sure that quote for your vehicle came through okay? You'v"
+    },
+    {
+      "name": "Jorge",
+      "lastMsg": "Hey Jorge, just making sure that quote for your vehicle came through okay? You'v"
+    },
+    {
+      "name": "Denise",
+      "lastMsg": "Hey Denise, just making sure that quote for your vehicle came through okay? You'"
+    },
+    {
+      "name": "Astra",
+      "lastMsg": "Hey Astra, just making sure that quote for your vehicle came through okay? You'v"
+    },
+    {
+      "name": "florida",
+      "lastMsg": "Hey Florida, just making sure that quote for your vehicle came through okay? You"
+    },
+    {
+      "name": "Chris",
+      "lastMsg": "Hey man, reaching back out. Checking if you're back yet"
+    },
     {
       "name": "Vincent Crawford",
       "lastMsg": "Good morning Vincent, Happy 4th of July! Just a reminder that your appointment i"
@@ -32,99 +72,69 @@ window.PULSE_DATA = {
     {
       "name": "Doris",
       "lastMsg": "Last one from me, Doris. Going to close out the quote on your [object Object] fo"
-    },
-    {
-      "name": "Robert",
-      "lastMsg": "Last one from me, Robert. Going to close out the quote on your [object Object] f"
-    },
-    {
-      "name": "Elissa",
-      "lastMsg": "Last one from me, Elissa. Going to close out the quote on your [object Object] f"
-    },
-    {
-      "name": "Cilla",
-      "lastMsg": "Last one from me, Cilla. Going to close out the quote on your [object Object] fo"
-    },
-    {
-      "name": "Chris",
-      "lastMsg": "Hey man, darn. Im happy that you're getting some time off  man that's awesome. S"
-    },
-    {
-      "name": "Terri",
-      "lastMsg": "Stop"
-    },
-    {
-      "name": "(689) 241-4958",
-      "lastMsg": "Hi this is S Class Auto Aesthetics, I saw that we just missed your call how can "
     }
   ],
   "pipeline": [
     {
+      "name": "Helen",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
+      "name": "Jorge",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
+      "name": "Astra",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
       "name": "Eduardo",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 11
+      "daysStale": 12
     },
     {
       "name": "Robert",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 11
+      "daysStale": 12
     },
     {
       "name": "Elissa",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 11
+      "daysStale": 12
     },
     {
       "name": "Doris",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 11
+      "daysStale": 12
     },
     {
       "name": "Emilys",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 11
+      "daysStale": 12
     },
     {
       "name": "Cilla",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 11
+      "daysStale": 12
     },
     {
       "name": "Enrique",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 11
-    },
-    {
-      "name": "Nia",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 11
-    },
-    {
-      "name": "Danielle",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 11
-    },
-    {
-      "name": "Carlos",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 11
+      "daysStale": 12
     }
   ],
-  "appointments": [
-    {
-      "title": "Vincent Crawford \u2014 FRESH \u2014 $215 \u2014 Sedan / Coupe",
-      "time": "09:00 AM",
-      "contact": ""
-    }
-  ]
+  "appointments": []
 };
