@@ -1,201 +1,196 @@
 window.PULSE_DATA = {
-  "updatedDisplay": "Jul 15, 09:40 AM ET",
-  "updatedISO": "2026-07-15T13:40:39.005298+00:00",
+  "updatedDisplay": "Jul 16, 09:46 AM ET",
+  "updatedISO": "2026-07-16T13:46:49.068017+00:00",
   "counts": {
-    "newLeads": 9,
-    "staleLeads": 26,
+    "newLeads": 8,
+    "staleLeads": 22,
     "unreads": 20,
     "pipeline": 20,
     "appointments": 1
   },
   "newLeads": [
     {
-      "name": "+17862249428",
-      "phone": "+17862249428",
+      "name": "deandra",
+      "phone": "+13052444186",
       "source": "Unknown"
     },
     {
-      "name": "shailyn",
-      "phone": "+13055022264",
+      "name": "latisha",
+      "phone": "+17866589010",
       "source": "Unknown"
     },
     {
-      "name": "neilon",
-      "phone": "+17869099636",
+      "name": "edwinje",
+      "phone": "+17862052902",
       "source": "Unknown"
     },
     {
-      "name": "tasharie",
-      "phone": "+17542842999",
+      "name": "guy",
+      "phone": "+13053455969",
       "source": "Unknown"
     },
     {
-      "name": "cheyla",
-      "phone": "+17865417299",
+      "name": "yasmelia",
+      "phone": "+17862774962",
       "source": "Unknown"
     },
     {
-      "name": "chelsea",
-      "phone": "+17867808766",
+      "name": "heily",
+      "phone": "+17025415781",
       "source": "Unknown"
     },
     {
-      "name": "annially",
-      "phone": "+13059512679",
+      "name": "rene",
+      "phone": "+17869161895",
       "source": "Unknown"
     },
     {
-      "name": "gary",
-      "phone": "+13056061072",
-      "source": "Unknown"
-    },
-    {
-      "name": "mariel",
-      "phone": "+17863725957",
+      "name": "javier",
+      "phone": "+12104382884",
       "source": "Unknown"
     }
   ],
   "staleLeads": [
     {
+      "name": "edwinje",
+      "phone": "+17862052902",
+      "hoursAgo": 8.0
+    },
+    {
+      "name": "guy",
+      "phone": "+13053455969",
+      "hoursAgo": 9.2
+    },
+    {
+      "name": "yasmelia",
+      "phone": "+17862774962",
+      "hoursAgo": 10.4
+    },
+    {
+      "name": "heily",
+      "phone": "+17025415781",
+      "hoursAgo": 10.7
+    },
+    {
+      "name": "rene",
+      "phone": "+17869161895",
+      "hoursAgo": 11.0
+    },
+    {
+      "name": "javier",
+      "phone": "+12104382884",
+      "hoursAgo": 18.8
+    },
+    {
+      "name": "+17862249428",
+      "phone": "+17862249428",
+      "hoursAgo": 26.5
+    },
+    {
       "name": "shailyn",
       "phone": "+13055022264",
-      "hoursAgo": 11.6
-    },
-    {
-      "name": "neilon",
-      "phone": "+17869099636",
-      "hoursAgo": 11.9
-    },
-    {
-      "name": "tasharie",
-      "phone": "+17542842999",
-      "hoursAgo": 13.1
-    },
-    {
-      "name": "cheyla",
-      "phone": "+17865417299",
-      "hoursAgo": 13.2
-    },
-    {
-      "name": "chelsea",
-      "phone": "+17867808766",
-      "hoursAgo": 19.6
-    },
-    {
-      "name": "annially",
-      "phone": "+13059512679",
-      "hoursAgo": 22.4
-    },
-    {
-      "name": "gary",
-      "phone": "+13056061072",
-      "hoursAgo": 22.8
-    },
-    {
-      "name": "mariel",
-      "phone": "+17863725957",
-      "hoursAgo": 23.1
+      "hoursAgo": 35.7
     }
   ],
   "unreads": [
     {
-      "name": "Jasmine",
-      "lastMsg": "Last one from me, Jasmine. Going to close out the quote on your vehicle for now "
+      "name": "Mariel",
+      "lastMsg": "Good morning! Got it, will do! Are you able to clean a second car tomorrow as we"
     },
     {
-      "name": "Dinah",
-      "lastMsg": "Hey Dinah, filling up my schedule this week, still want your car detailed?? Can "
+      "name": "Marian",
+      "lastMsg": "Good morning! Yeah just let me know!"
     },
     {
-      "name": "Cheyla",
-      "lastMsg": "Hey Cheyla, just making sure that quote for your vehicle came through okay? You'"
+      "name": "Lovely",
+      "lastMsg": "Last one from me, Lovely. Going to close out the quote on your vehicle for now s"
     },
     {
-      "name": "Shailyn",
-      "lastMsg": "Hey Shailyn, just making sure that quote for your vehicle came through okay? You"
+      "name": "Jazlyn",
+      "lastMsg": "No rush at all, just don't want to leave you hanging. Is it the timing, the pric"
     },
     {
-      "name": "Neilon",
-      "lastMsg": "Hey Neilon, just making sure that quote for your vehicle came through okay? You'"
+      "name": "Guy",
+      "lastMsg": "Hey Guy, just making sure that quote for your vehicle came through okay? You've "
     },
     {
-      "name": "Tasharie",
-      "lastMsg": "Hey Tasharie, just making sure that quote for your vehicle came through okay? Yo"
+      "name": "Rene",
+      "lastMsg": "Hey Rene, just making sure that quote for your vehicle came through okay? You've"
     },
     {
-      "name": "Alana",
-      "lastMsg": "Hey Alana, your detail is coming up in a few days , at Saturday, July 18, 2026 9"
+      "name": "Edna Mae Coley",
+      "lastMsg": "Hey Edna, just making sure that quote for your vehicle came through okay? You've"
     },
     {
-      "name": "(786) 224-9428",
-      "lastMsg": "Hey Brando my names Ashley faith recommended you :) can you wash my rav 4 when y"
+      "name": "Deandra",
+      "lastMsg": "Hey Deandra, just making sure that quote for your vehicle came through okay? You"
     },
     {
-      "name": "Sharyn",
-      "lastMsg": "Last one from me, Sharyn. Going to close out the quote on your vehicle for now s"
+      "name": "Yasmelia",
+      "lastMsg": "Hey Yasmelia, just making sure that quote for your vehicle came through okay? Yo"
     },
     {
-      "name": "chelsea",
-      "lastMsg": "Here's some recent work so you can see what you'd actually be getting: https://s"
+      "name": "Amy",
+      "lastMsg": "Hey Amy, just making sure that quote for your vehicle came through okay? You've "
     }
   ],
   "pipeline": [
     {
+      "name": "Deandra",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
+      "name": "Latisha",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
+      "name": "Edwinje",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
+      "name": "Guy",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
+      "name": "Yasmelia",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
+      "name": "Heily",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
+      "name": "Rene",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
+      "name": "Javier",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
       "name": "Shailyn",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 0
-    },
-    {
-      "name": "Neilon",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 0
-    },
-    {
-      "name": "Tasharie",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 0
-    },
-    {
-      "name": "Cheyla",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 0
-    },
-    {
-      "name": "chelsea",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 0
-    },
-    {
-      "name": "Annially",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 0
-    },
-    {
-      "name": "Gary",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 0
-    },
-    {
-      "name": "Mariel",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 0
-    },
-    {
-      "name": "Ilene",
       "stage": "New detailing lead",
       "value": 160.0,
       "daysStale": 1
     },
     {
-      "name": "Kori Agurs",
+      "name": "Neilon",
       "stage": "New detailing lead",
       "value": 160.0,
       "daysStale": 1
@@ -203,8 +198,8 @@ window.PULSE_DATA = {
   ],
   "appointments": [
     {
-      "title": "Angel \u2014 PRISTINE \u2014 $275 \u2014 Truck / Van",
-      "time": "05:00 AM",
+      "title": "Marian ",
+      "time": "06:00 AM",
       "contact": ""
     }
   ]
