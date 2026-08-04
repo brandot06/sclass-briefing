@@ -1,8 +1,8 @@
 window.PULSE_DATA = {
-  "updatedDisplay": "Aug 03, 10:34 AM ET",
-  "updatedISO": "2026-08-03T14:34:48.682122+00:00",
+  "updatedDisplay": "Aug 04, 10:06 AM ET",
+  "updatedISO": "2026-08-04T14:06:41.955608+00:00",
   "counts": {
-    "newLeads": 10,
+    "newLeads": 8,
     "staleLeads": 22,
     "unreads": 20,
     "pipeline": 20,
@@ -10,200 +10,190 @@ window.PULSE_DATA = {
   },
   "newLeads": [
     {
-      "name": "mark",
-      "phone": "+15712715191",
+      "name": "paul",
+      "phone": "+13057731492",
       "source": "Unknown"
     },
     {
-      "name": "mclaughlin-elabdi",
-      "phone": "+17863761151",
+      "name": "reinaldo",
+      "phone": "+13052409497",
       "source": "Unknown"
     },
     {
-      "name": "henrique",
-      "phone": "+16462900756",
+      "name": "cauline",
+      "phone": "+17542390063",
       "source": "Unknown"
     },
     {
-      "name": "loni",
-      "phone": "+15615379021",
+      "name": "nicole",
+      "phone": "+17864275010",
       "source": "Unknown"
     },
     {
-      "name": "rose",
-      "phone": "+17863263470",
+      "name": "armando",
+      "phone": "+13057485268",
       "source": "Unknown"
     },
     {
-      "name": "manny",
-      "phone": "+13055196778",
+      "name": "jessie",
+      "phone": "+17869579396",
       "source": "Unknown"
     },
     {
-      "name": "david",
-      "phone": "+19549479795",
+      "name": "kimberly",
+      "phone": "+13056132324",
       "source": "Unknown"
     },
     {
-      "name": "jt",
-      "phone": "+16013086684",
-      "source": "Unknown"
-    },
-    {
-      "name": "rose",
-      "phone": "+17863375186",
-      "source": "Unknown"
-    },
-    {
-      "name": "christian",
-      "phone": "+17863836428",
+      "name": "miranda",
+      "phone": "+17865380772",
       "source": "Unknown"
     }
   ],
   "staleLeads": [
     {
-      "name": "mclaughlin-elabdi",
-      "phone": "+17863761151",
-      "hoursAgo": 11.0
+      "name": "paul",
+      "phone": "+13057731492",
+      "hoursAgo": 10.4
     },
     {
-      "name": "henrique",
-      "phone": "+16462900756",
-      "hoursAgo": 12.3
+      "name": "reinaldo",
+      "phone": "+13052409497",
+      "hoursAgo": 10.6
     },
     {
-      "name": "loni",
-      "phone": "+15615379021",
-      "hoursAgo": 13.2
+      "name": "cauline",
+      "phone": "+17542390063",
+      "hoursAgo": 10.7
     },
     {
-      "name": "rose",
-      "phone": "+17863263470",
-      "hoursAgo": 15.7
+      "name": "nicole",
+      "phone": "+17864275010",
+      "hoursAgo": 14.6
     },
     {
-      "name": "manny",
-      "phone": "+13055196778",
-      "hoursAgo": 16.4
+      "name": "armando",
+      "phone": "+13057485268",
+      "hoursAgo": 19.2
     },
     {
-      "name": "david",
-      "phone": "+19549479795",
-      "hoursAgo": 18.7
+      "name": "jessie",
+      "phone": "+17869579396",
+      "hoursAgo": 19.8
     },
     {
-      "name": "jt",
-      "phone": "+16013086684",
-      "hoursAgo": 19.9
+      "name": "kimberly",
+      "phone": "+13056132324",
+      "hoursAgo": 20.1
     },
     {
-      "name": "rose",
-      "phone": "+17863375186",
-      "hoursAgo": 22.7
+      "name": "miranda",
+      "phone": "+17865380772",
+      "hoursAgo": 20.2
     }
   ],
   "unreads": [
     {
-      "name": "Rose",
-      "lastMsg": "Ok. Thank you. I'm still thinking about it.  Have not made a decision yet"
-    },
-    {
-      "name": "Henrique",
-      "lastMsg": "I wanted to confirm pricing first; if there's any discount for first time?"
-    },
-    {
-      "name": "Mark",
-      "lastMsg": "Good morning. Thanks. Something I'm looking at"
-    },
-    {
-      "name": "Jessy",
-      "lastMsg": "Last one from me, Jessy. Going to close out the quote on your vehicle for now so"
-    },
-    {
-      "name": "Natashia",
-      "lastMsg": "Last one from me, Natashia. Going to close out the quote on your vehicle for now"
-    },
-    {
-      "name": "Cecilia",
-      "lastMsg": "No rush at all, just don't want to leave you hanging. Is it the timing, the pric"
-    },
-    {
-      "name": "Dee",
-      "lastMsg": "Hey Dee, filling up my schedule this week, still want your car detailed?? Can lo"
+      "name": "Nicole",
+      "lastMsg": "Stop"
     },
     {
       "name": "Manny",
+      "lastMsg": "Hey Manny, filling up my schedule this week, still want your car detailed?? Can "
+    },
+    {
+      "name": "Cauline",
+      "lastMsg": "Hey Cauline, just making sure that quote for your vehicle came through okay? You"
+    },
+    {
+      "name": "Aria",
       "lastMsg": "Here's some recent work so you can see what you'd actually be getting: https://s"
     },
     {
-      "name": "McLaughlin-Elabdi",
-      "lastMsg": "Hey McLaughlin-Elabdi, just making sure that quote for your vehicle came through"
+      "name": "Vannessa",
+      "lastMsg": "You're booked! \u2705\n\n\ud83d\udcc5 Wednesday, August 5 at 12:00 PM\n\ud83d\udccd 8850 sw 41 st\n\ud83d\ude97 Full Detai"
     },
     {
-      "name": "Loni",
-      "lastMsg": "You're booked! \u2705\n\n\ud83d\udcc5 Saturday, August 8 at 11:30 AM\n\ud83d\udccd 5901 SW 58th Terr, South Mi"
+      "name": "Paul",
+      "lastMsg": "You're booked! \u2705\n\n\ud83d\udcc5 Friday, August 7 at 10:30 AM\n\ud83d\udccd 1505 Westward Drive, Miami Sp"
+    },
+    {
+      "name": "Reinaldo",
+      "lastMsg": "You're booked! \u2705\n\n\ud83d\udcc5 Saturday, August 15 at 11:00 AM\n\ud83d\udccd 6731 NW 29th Ave Miami,Fl "
+    },
+    {
+      "name": "Armando",
+      "lastMsg": "Here's some recent work so you can see what you'd actually be getting: https://s"
+    },
+    {
+      "name": "JT",
+      "lastMsg": "Hey JT, filling up my schedule this week, still want your car detailed?? Can loc"
+    },
+    {
+      "name": "Jessie",
+      "lastMsg": "Here's some recent work so you can see what you'd actually be getting: https://s"
     }
   ],
   "pipeline": [
     {
-      "name": "Mark",
+      "name": "Paul",
       "stage": "New detailing lead",
       "value": 160.0,
       "daysStale": 0
+    },
+    {
+      "name": "Reinaldo",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
+      "name": "Cauline",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
+      "name": "Nicole",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
+      "name": "Armando",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
+      "name": "Jessie",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
+      "name": "Kimberly",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
+      "name": "Miranda",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 0
+    },
+    {
+      "name": "Mark",
+      "stage": "New detailing lead",
+      "value": 160.0,
+      "daysStale": 1
     },
     {
       "name": "McLaughlin-Elabdi",
       "stage": "New detailing lead",
       "value": 160.0,
-      "daysStale": 0
-    },
-    {
-      "name": "Henrique",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 0
-    },
-    {
-      "name": "Loni",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 0
-    },
-    {
-      "name": "Rose",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 0
-    },
-    {
-      "name": "Manny",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 0
-    },
-    {
-      "name": "david",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 0
-    },
-    {
-      "name": "JT",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 0
-    },
-    {
-      "name": "Rose",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 0
-    },
-    {
-      "name": "Christian",
-      "stage": "New detailing lead",
-      "value": 160.0,
-      "daysStale": 0
+      "daysStale": 1
     }
   ],
   "appointments": [
